@@ -265,7 +265,7 @@ img {
 
 .about-media-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 14px;
 }
 
@@ -279,8 +279,9 @@ img {
 
 .media-item img {
   width: 100%;
-  aspect-ratio: 5 / 3;
+  height: 200px; /* hoặc 250px tùy bạn */
   object-fit: cover;
+  border-radius: 8px;
 }
 
 .media-item figcaption {
